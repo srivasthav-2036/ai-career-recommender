@@ -42,7 +42,7 @@ if uploaded_file:
             status_placeholder.info(msg)
             time.sleep(2)
         with st.spinner("Generating results..."):
-            response = requests.post("http://localhost:5000/recommend", json={"resume_text": resume_text})
+            response = requests.post("https://ai-career-recommender-flask-api.onrender.com/recommend", json={"resume_text": resume_text})
             print("Response Status Code:", response.status_code)
 
             if response.status_code == 200:
