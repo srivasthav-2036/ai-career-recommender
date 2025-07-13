@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Machine Learning Engineer",
+    "description": "Develop machine learning models using Python, Scikit-learn, and TensorFlow to solve business problems."
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "description": "Build and maintain server-side applications using Flask, Node.js, and SQL. Ensure APIs are scalable and secure."
+  },
+  {
+    "id": 3,
+    "title": "Frontend Developer",
+    "description": "Design and implement responsive UIs using React, JavaScript, HTML, and CSS."
+  },
+  {
+    "id": 4,
+    "title": "Data Scientist",
+    "description": "Perform data analysis, feature engineering, and model building using Python, Pandas, and Scikit-learn."
+  },
+  {
+    "id": 5,
+    "title": "DevOps Engineer",
+    "description": "Automate infrastructure with Docker, Kubernetes, and CI/CD tools like Jenkins and GitHub Actions."
+  },
+  {
+    "id": 6,
+    "title": "Cloud Engineer",
+    "description": "Deploy and manage cloud infrastructure on AWS, Azure, or GCP. Work with services like EC2, Lambda, and S3."
+  },
+  {
+    "id": 7,
+    "title": "AI Research Intern",
+    "description": "Assist in research and experimentation with deep learning models using PyTorch and HuggingFace Transformers."
+  },
+  {
+    "id": 8,
+    "title": "Mobile App Developer",
+    "description": "Build Android and iOS applications using Flutter or React Native with strong focus on UI/UX."
+  },
+  {
+    "id": 9,
+    "title": "Cybersecurity Analyst",
+    "description": "Monitor and protect systems from security threats. Use tools like Wireshark, Firewalls, and Intrusion Detection Systems."
+  },
+  {
+    "id": 10,
+    "title": "Business Analyst",
+    "description": "Analyze data to generate business insights. Communicate findings using Excel, SQL, and Power BI or Tableau."
+  }
+]

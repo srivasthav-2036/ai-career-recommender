@@ -1,0 +1,4 @@
+flask
+flask-cors
+sentence-transformers
+scikit-learn
