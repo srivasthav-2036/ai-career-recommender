@@ -1,7 +1,7 @@
 flask
 flask-cors
-sentence-transformers
-scikit-learn
 spacy==3.7.2
+scikit-learn
+sentence-transformers
+numpy==1.26.4
 blis==0.7.11
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
