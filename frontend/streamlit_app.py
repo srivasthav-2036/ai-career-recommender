@@ -25,12 +25,12 @@ loading_steps = [
     "📑 Extracting experience and projects...",
     "🧠 Matching your skills to roles...",
     "🤖 Finding best-matching jobs...",
-    "✅ Processing complete!"
+    "✅ Processing completed!"
 ]
 
 if uploaded_file:
     resume_text = extract_text(uploaded_file)
-    col1, col2 = st.columns([2, 1])  # wider text, narrower parsed data
+    col1, col2 = st.columns([2, 1]) 
 
     with col1:
         st.subheader("Extracted Resume Text")
