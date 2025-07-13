@@ -1,7 +1,7 @@
-
-import spacy
 from spacy.matcher import PhraseMatcher
-nlp = spacy.load("en_core_web_sm")
+import en_core_web_sm
+
+nlp = en_core_web_sm.load()
 def extract_skills_experience(resume_txt):
     # extracting skills
 
