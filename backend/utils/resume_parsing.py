@@ -1,7 +1,8 @@
 from spacy.matcher import PhraseMatcher
-import en_core_web_sm
+import spacy
 
-nlp = en_core_web_sm.load()
+nlp = spacy.load("en_core_web_sm")
+pm = PhraseMatcher(nlp.vocab)
 def extract_skills_experience(resume_txt):
     # extracting skills
 
@@ -12,7 +13,6 @@ def extract_skills_experience(resume_txt):
         "tensorflow", "pytorch", "flask", "django", "aws","dbms","pandas","matplotlib"]
     skills=set()
     doc=nlp(resume_txt.lower())
-    pm=PhraseMatcher(nlp.vocab)
     patterns=[nlp(skill) for skill in skill_list]
     pm.add("SKILLS", patterns)
 
