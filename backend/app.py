@@ -4,6 +4,8 @@ import json
 
 from utils.resume_parsing import extract_skills_experience
 from utils.matching import rank_jobs,rule_based_filter
+from utils.guidance import generate_guidance
+
 
 app = Flask(__name__)
 CORS(app)  # Allow frontend (Streamlit) to talk to Flask backend
@@ -26,7 +28,7 @@ def recommend_jobs():
             f"Projects: {', '.join(parsed_resume['projects'])}. "
         )
 
-        if parsed_resume['experience']:
+        if parsed_resume.get('experience',[]):
             resume_query += f"Experience: {', '.join(parsed_resume['experience'])}."
 
 
@@ -40,6 +42,50 @@ def recommend_jobs():
     except Exception as e:
         print("[ERROR] Exception occurred:", e)
         return jsonify({"error": str(e)}), 500
+    
+# @app.route("/guidance",methods=["POST"])
+# def guidance():
+#     try:
+#         data=request.get_json()
+#         user_skills=data.get("skills",[])
+#         recommended_jobs=data.get("recommended_jobs",[])
+#         target_role=data.get("target_role","")
+#         print("[DEBUG] Calling generate_guidance()") 
+#         generate_guidance(user_skills,recommended_jobs,target_role)
+#         return jsonify({"status": "Guidance generated and printed in console"})
+
+
+#     except Exception as e:
+#         print("[ERROR] Exception occurred:", e)
+#         return jsonify({"error": str(e)}), 500
+
+@app.route("/guidance", methods=["POST"])
+def guidance():
+    try:
+        data = request.get_json()
+        user_skills = data.get("skills", [])
+        recommended_jobs = data.get("recommended_jobs", [])
+        target_role = data.get("target_role", "")
+        print("target role",target_role)
+        print("skills",user_skills)
+        print("recjobs",recommended_jobs)
+        print("[DEBUG] Calling generate_guidance()", flush=True)
+        guidance_text = generate_guidance(user_skills, recommended_jobs, target_role)
+
+        # ✅ Print in console for debugging
+        print("\n=== GUIDANCE OUTPUT ===\n", guidance_text, flush=True)
+
+        # ✅ Return the guidance to Streamlit so it can be displayed
+        return jsonify({
+            "status": "success",
+            "guidance": guidance_text
+        })
+
+    except Exception as e:
+        print("[ERROR] Exception occurred:", e, flush=True)
+        return jsonify({"error": str(e)}), 500
+ 
+
 
 if __name__ == "__main__":
     print("=== Running Flask Server ===")
