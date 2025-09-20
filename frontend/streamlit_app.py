@@ -56,7 +56,7 @@ if uploaded_file and st.button("Find Matching Jobs"):
         time.sleep(1)
 
     with st.spinner("Generating results..."):
-        response = requests.post("http://localhost:5000/recommend", json={"resume_text": resume_text})
+        response = requests.post("https://ai-career-recommender-three.vercel.app/recommend", json={"resume_text": resume_text})
         print("Response Status Code:", response.status_code)
 
         if response.status_code == 200:
@@ -117,7 +117,7 @@ user_input = st.text_input("Enter your target job role (e.g., Data Scientist, We
 if st.button("Get Guidance"):
     with st.spinner("Generating career guidance..."):
         response = requests.post(
-            "http://localhost:5000/guidance",
+            "https://ai-career-recommender-three.vercel.app/guidance",
             json={
                 "skills": st.session_state.parsed.get("skills", []),
                 "recommended_jobs": st.session_state.jobs_title,
