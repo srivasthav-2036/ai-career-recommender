@@ -42,22 +42,6 @@ def recommend_jobs():
     except Exception as e:
         print("[ERROR] Exception occurred:", e)
         return jsonify({"error": str(e)}), 500
-    
-# @app.route("/guidance",methods=["POST"])
-# def guidance():
-#     try:
-#         data=request.get_json()
-#         user_skills=data.get("skills",[])
-#         recommended_jobs=data.get("recommended_jobs",[])
-#         target_role=data.get("target_role","")
-#         print("[DEBUG] Calling generate_guidance()") 
-#         generate_guidance(user_skills,recommended_jobs,target_role)
-#         return jsonify({"status": "Guidance generated and printed in console"})
-
-
-#     except Exception as e:
-#         print("[ERROR] Exception occurred:", e)
-#         return jsonify({"error": str(e)}), 500
 
 @app.route("/guidance", methods=["POST"])
 def guidance():
