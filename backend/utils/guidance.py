@@ -1,6 +1,14 @@
 import google.generativeai as genai
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-genai.configure(api_key="AIzaSyD3S-I13cK5Vfnx8ljd87vy_kwa3wlX58M")
+api_key = os.getenv("GOOGLE_API_KEY")
+if not api_key:
+    raise ValueError("GOOGLE_API_KEY not found. Check your .env or deployment settings.")
+genai.configure(api_key=api_key)
+
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 def generate_guidance(user_skills, recommended_jobs, target_role):
