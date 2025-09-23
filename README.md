@@ -73,5 +73,4 @@ This opens the UI at http://localhost:8501.
 └── README.md
 ```
 
-## License
-This project is for educational/demo purposes.
+
