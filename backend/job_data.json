@@ -2,51 +2,101 @@
   {
     "id": 1,
     "title": "Machine Learning Engineer",
-    "description": "Develop machine learning models using Python, Scikit-learn, and TensorFlow to solve business problems."
+    "description": "Develop and deploy machine learning models to solve real-world problems. Python, machine learning, scikit-learn, TensorFlow, feature engineering, data preprocessing, regression, classification, model training, Flask deployment."
   },
   {
     "id": 2,
     "title": "Backend Developer",
-    "description": "Build and maintain server-side applications using Flask, Node.js, and SQL. Ensure APIs are scalable and secure."
+    "description": "Build and maintain scalable server-side applications and APIs. Python, Flask, Node.js, REST APIs, backend development, SQL, databases, authentication, API design."
   },
   {
     "id": 3,
     "title": "Frontend Developer",
-    "description": "Design and implement responsive UIs using React, JavaScript, HTML, and CSS."
+    "description": "Design and implement responsive user interfaces for web applications. HTML, CSS, JavaScript, React, frontend development, UI components, responsive design."
   },
   {
     "id": 4,
     "title": "Data Scientist",
-    "description": "Perform data analysis, feature engineering, and model building using Python, Pandas, and Scikit-learn."
+    "description": "Analyze data and build predictive models to generate insights. Python, pandas, numpy, data analysis, machine learning, statistics, feature engineering, scikit-learn, data visualization."
   },
   {
     "id": 5,
     "title": "DevOps Engineer",
-    "description": "Automate infrastructure with Docker, Kubernetes, and CI/CD tools like Jenkins and GitHub Actions."
+    "description": "Automate deployment pipelines and manage infrastructure. Docker, Kubernetes, CI/CD, DevOps, Jenkins, GitHub Actions, cloud deployment, automation."
   },
   {
     "id": 6,
     "title": "Cloud Engineer",
-    "description": "Deploy and manage cloud infrastructure on AWS, Azure, or GCP. Work with services like EC2, Lambda, and S3."
+    "description": "Deploy and manage scalable cloud infrastructure. AWS, Azure, GCP, cloud computing, EC2, S3, Lambda, cloud deployment, infrastructure management."
   },
   {
     "id": 7,
     "title": "AI Research Intern",
-    "description": "Assist in research and experimentation with deep learning models using PyTorch and HuggingFace Transformers."
+    "description": "Assist in AI research and experimentation with advanced models. Python, deep learning, PyTorch, TensorFlow, neural networks, transformers, research, model evaluation."
   },
   {
     "id": 8,
     "title": "Mobile App Developer",
-    "description": "Build Android and iOS applications using Flutter or React Native with strong focus on UI/UX."
+    "description": "Build mobile applications with strong performance and UI. Android development, iOS development, Flutter, React Native, mobile applications, UI/UX."
   },
   {
     "id": 9,
     "title": "Cybersecurity Analyst",
-    "description": "Monitor and protect systems from security threats. Use tools like Wireshark, Firewalls, and Intrusion Detection Systems."
+    "description": "Monitor and protect systems from security threats. Cybersecurity, network security, firewalls, intrusion detection systems, Wireshark, threat analysis."
   },
   {
     "id": 10,
     "title": "Business Analyst",
-    "description": "Analyze data to generate business insights. Communicate findings using Excel, SQL, and Power BI or Tableau."
+    "description": "Analyze business data to generate insights and reports. Business analysis, SQL, Excel, Power BI, Tableau, data analysis, reporting, dashboards."
+  },
+  {
+    "id": 11,
+    "title": "Software Engineer",
+    "description": "Develop high-quality software solutions and maintain systems. Software development, Python, Java, data structures, algorithms, problem solving, system design."
+  },
+  {
+    "id": 12,
+    "title": "AI Engineer",
+    "description": "Design and build AI-driven applications. Artificial intelligence, machine learning, deep learning, Python, TensorFlow, model deployment, AI systems."
+  },
+  {
+    "id": 13,
+    "title": "Full Stack Developer",
+    "description": "Develop end-to-end web applications covering frontend and backend. Full stack development, HTML, CSS, JavaScript, Flask, Node.js, SQL, web applications."
+  },
+  {
+    "id": 14,
+    "title": "Data Analyst",
+    "description": "Collect, process, and analyze data to identify trends. Data analysis, Python, SQL, Excel, pandas, statistics, dashboards, data visualization."
+  },
+  {
+    "id": 15,
+    "title": "Cloud Architect",
+    "description": "Design cloud architecture ensuring scalability and reliability. Cloud architecture, AWS, Azure, GCP, system design, infrastructure, scalability."
+  },
+  {
+    "id": 16,
+    "title": "QA Engineer",
+    "description": "Ensure software quality through testing and validation. Software testing, QA, test cases, bug tracking, automation testing, quality assurance."
+  },
+  {
+    "id": 17,
+    "title": "UI/UX Designer",
+    "description": "Design intuitive user interfaces and improve user experience. UI design, UX design, wireframes, prototypes, Figma, user experience."
+  },
+  {
+    "id": 18,
+    "title": "Systems Engineer",
+    "description": "Manage and support system infrastructure. Systems engineering, operating systems, networking, infrastructure, system administration."
+  },
+  {
+    "id": 19,
+    "title": "Product Manager",
+    "description": "Lead product planning and requirement definition. Product management, requirements gathering, roadmap planning, stakeholder communication, analytics."
+  },
+  {
+    "id": 20,
+    "title": "Research Intern",
+    "description": "Support research activities and experimentation. Research, data analysis, experimentation, Python, model evaluation, documentation."
   }
 ]

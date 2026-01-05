@@ -17,7 +17,7 @@ def rule_based_filter(user_skills, job_data):
 
 def rank_jobs(resume_query, jobs, top_k=3):
     resume_embedding = model.encode([resume_query],normalize_embeddings=True)
-    job_descriptions = [job["description"] for job in jobs]
+    job_descriptions = [job["description"].lower() for job in jobs]
     job_embeddings = model.encode(job_descriptions,normalize_embeddings=True)
 
     similarities = cosine_similarity(resume_embedding, job_embeddings)[0]

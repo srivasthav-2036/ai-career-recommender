@@ -34,7 +34,7 @@ def recommend_jobs():
 
         filtered_jobs = rule_based_filter(parsed_resume["skills"], job_data)
 
-        top_jobs = rank_jobs(resume_query, filtered_jobs, top_k=3)
+        top_jobs = rank_jobs(resume_query.lower(), filtered_jobs, top_k=3)
 
  
         return jsonify({"recommendations": top_jobs,"parsed_resume": parsed_resume})
