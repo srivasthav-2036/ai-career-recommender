@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)  # Allow frontend (Streamlit) to talk to Flask backend
 
 # Load job data once
-with open("backend/job_data.json", "r") as f:
+with open("job_data.json", "r") as f:
     job_data = json.load(f)
 
 @app.route("/recommend", methods=["POST"])
